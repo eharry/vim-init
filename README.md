@@ -60,3 +60,10 @@ source ~/.vim/vim-init/init.vim
 # Credit
 
 TODO
+
+# ---------------------------------------------------------
+
+在原始版本基础上, 增加了 vim-lsp 的配置, 
+因为我只用 c/c++， 所以 vim-lsp 几乎不需要额外配置，只需要安装 clangd 即可.
+已知问题:
+- vim-lsp 第一次的 reference 读不出来， 重新启动 vim 后， 第二次 获取 reference 就正常了。  原因未知.
