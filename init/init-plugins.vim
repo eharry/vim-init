@@ -421,25 +421,25 @@ if index(g:bundle_group, 'leaderf') >= 0
 		Plug 'Yggdroot/LeaderF'
 
 		" CTRL+p 打开文件模糊匹配
-		let g:Lf_ShortcutF = '<c-p>'
+		let g:Lf_ShortcutF = '<leader>ff'
 
 		" ALT+n 打开 buffer 模糊匹配
-		let g:Lf_ShortcutB = '<m-n>'
+		let g:Lf_ShortcutB = '<leader>fb'
 
 		" CTRL+n 打开最近使用的文件 MRU，进行模糊匹配
-		noremap <c-n> :LeaderfMru<cr>
+		noremap <leader>fo :LeaderfMru<cr>
 
 		" ALT+p 打开函数列表，按 i 进入模糊匹配，ESC 退出
-		noremap <m-p> :LeaderfFunction!<cr>
+		noremap <leader>fn :LeaderfFunction!<cr>
 
 		" ALT+SHIFT+p 打开 tag 列表，i 进入模糊匹配，ESC退出
-		noremap <m-P> :LeaderfBufTag!<cr>
+		noremap <leader>ft :LeaderfBufTag!<cr>
 
 		" ALT+n 打开 buffer 列表进行模糊匹配
-		noremap <m-n> :LeaderfBuffer<cr>
+		noremap <leader>fb :LeaderfBuffer<cr>
 
 		" ALT+m 全局 tags 模糊匹配
-		noremap <m-m> :LeaderfTag<cr>
+		noremap <leader>fgt :LeaderfTag<cr>
 
 		" 最大历史文件保存 2048 个
 		let g:Lf_MruMaxFiles = 2048
@@ -451,6 +451,7 @@ if index(g:bundle_group, 'leaderf') >= 0
 		let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
 		let g:Lf_WorkingDirectoryMode = 'Ac'
 		let g:Lf_WindowHeight = 0.30
+        let g:Lf_WindowPosition = "popup"
 		let g:Lf_CacheDirectory = expand('~/.vim/cache')
 
 		" 显示绝对路径
@@ -519,6 +520,7 @@ endif
 
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
+Plug 'liuchengxu/vim-which-key'
 
 
 "----------------------------------------------------------------------
