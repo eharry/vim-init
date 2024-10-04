@@ -562,6 +562,9 @@ augroup lsp_install
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
+" whick-key
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
 
 "----------------------------------------------------------------------
 " YouCompleteMe 默认设置：YCM 需要你另外手动编译安装
