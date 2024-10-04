@@ -420,25 +420,25 @@ if index(g:bundle_group, 'leaderf') >= 0
 	if has('python') || has('python3')
 		Plug 'Yggdroot/LeaderF'
 
-		" CTRL+p 打开文件模糊匹配
+		" 打开文件模糊匹配
 		let g:Lf_ShortcutF = '<leader>ff'
 
-		" ALT+n 打开 buffer 模糊匹配
+		" 打开 buffer 模糊匹配
 		let g:Lf_ShortcutB = '<leader>fb'
 
-		" CTRL+n 打开最近使用的文件 MRU，进行模糊匹配
+		" 打开最近使用的文件 MRU，进行模糊匹配
 		noremap <leader>fo :LeaderfMru<cr>
 
-		" ALT+p 打开函数列表，按 i 进入模糊匹配，ESC 退出
+		" 打开函数列表，按 i 进入模糊匹配，ESC 退出
 		noremap <leader>fn :LeaderfFunction!<cr>
 
-		" ALT+SHIFT+p 打开 tag 列表，i 进入模糊匹配，ESC退出
+		" 打开 tag 列表，i 进入模糊匹配，ESC退出
 		noremap <leader>ft :LeaderfBufTag!<cr>
 
-		" ALT+n 打开 buffer 列表进行模糊匹配
+		" 打开 buffer 列表进行模糊匹配
 		noremap <leader>fb :LeaderfBuffer<cr>
 
-		" ALT+m 全局 tags 模糊匹配
+		" 全局 tags 模糊匹配
 		noremap <leader>fgt :LeaderfTag<cr>
 
 		" 最大历史文件保存 2048 个
